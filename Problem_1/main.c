@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-void main() {
+void main()
+{
     int sum = 0;
     int i;
     for(i = 3; i < 1000; i++)
