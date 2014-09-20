@@ -12,14 +12,16 @@ int isPalindrome(long value)
         rev += sub % 10 * pow(10, len - i);
         sub /= 10;
     }
-    return value / (long)powl(10, len) == sub; //100 -> 001 -> 1
+    return value / (long)powl(10, len) == rev;
 }
 
 void main()
 {
     long value = 0;
-    int i;
+    long i;
+    long j;
     for(i = 100; i < 1000; i++)
-        value = (isPalindrome(pow(i, 2)) ? i : value);
+        for(j = 100; j < 1000; j++)
+            value = (value < i * j && isPalindrome(i * j) ? i * j : value);
     printf("%d", value);
 }
