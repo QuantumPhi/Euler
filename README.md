@@ -1,5 +1,5 @@
 Euler
 =====
-My solutions to [Project Euler](https://www.projecteuler.net) problems.
+My [Project Euler](https://www.projecteuler.net) solutions.
 
 Licensed under the [MIT License](LICENSE)
