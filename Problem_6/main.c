@@ -1,4 +1,3 @@
-#include <math.h>
 #include <stdio.h>
 
 long long summation(long long to)
